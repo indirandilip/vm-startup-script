@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# This is testing excersise
 # package updates and upgrades
 yum update -y 
 yum upgrade -y
