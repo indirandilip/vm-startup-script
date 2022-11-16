@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# package updates and upgrades
+yum update -y 
+yum upgrade -y
+
+# web-server installation, enabling and status check
+yum install httpd -y
+systemctl start httpd.service
+systemctl enable httpd.service
+
+# creating the html landing page
+echo “Hello World from $(hostname -f)” > /var/www/html/index.html
